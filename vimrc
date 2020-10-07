@@ -63,6 +63,10 @@ set number
 set relativenumber
 set cursorline
 set showcmd
+set t_Co=256
+set autoindent
+set showmatch
+set scrolloff=5
 set wildmenu
 set hlsearch
 exec "nohlsearch"
@@ -71,6 +75,7 @@ set ignorecase
 set smartcase
 set ai!
 noremap <LEADER><CR> :nohlsearch<CR>
+execute pathogen#infect()
 
 map S :w<CR>
 map s <nop>
